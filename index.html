@@ -253,6 +253,7 @@ body{font-family:'Manrope',sans-serif;background:#F6F3EC!important;color:#1C1B1F
         </div>
         <div id="main-intro">
         <div class="intro-tag">M11 · Medical Technology & Evidence Standards</div>
+        <div style="font-family:'Syne',sans-serif;font-size:0.68rem;color:var(--muted);letter-spacing:0.04em;margin:-1rem 0 1.25rem">Reviewed August 2026 · Evidence-based self-assessment</div>
         <h1 class="intro-h">How well does your institution govern medical technology & evidence standards?</h1>
         <p class="intro-sub">Obermeyer et al. (2019): a commercial algorithm used for 200 million patients was systematically underestimating Black patients' health needs. The governance infrastructure to detect it did not exist. Most US hospitals still don't have that infrastructure.</p>
         <p style="font-size:0.82rem;color:var(--muted);line-height:1.6;margin:-0.25rem 0 1.5rem;padding:0.75rem 1rem;background:rgba(0,0,0,0.03);border-radius:8px">This is an educational self-assessment, not a validated test or audit. Your answers stay in your browser to build your result. At the end you can enter an email to receive the PDF report — used only for your report and optional NSAG follow-up, never sold or shared.</p>
@@ -322,6 +323,24 @@ body{font-family:'Manrope',sans-serif;background:#F6F3EC!important;color:#1C1B1F
     </div>
     <div class="dim-legend" id="dim-legend"></div>
   </div>
+</div>
+
+<!-- MODULE DEEP DIVE -->
+<div style="max-width:640px;margin:0 auto;padding:2.5rem 2rem 0.5rem;">
+  <div class="intro-tag" style="background:var(--navy)">Module Deep Dive</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--text);margin-bottom:1rem">Governing Medical AI Before It Governs Patients</h2>
+  <p style="font-size:0.92rem;color:var(--text);line-height:1.75;margin-bottom:1rem">In 2019, <em>Science</em> published Obermeyer, Powers, Vogeli &amp; Mullainathan's analysis of a widely used commercial risk-prediction algorithm covering roughly 200 million patients a year. The algorithm used prior healthcare cost as a proxy for healthcare need — a reasonable-looking design choice that systematically underestimated how sick Black patients actually were, because less money had historically been spent on their care. The result was a governance failure hiding inside a technical one: no hospital using the tool had an independent, institution-conducted process for checking whether an AI tool's outputs held up across demographic groups before relying on it in clinical workflows. The tool worked as designed. The design was never audited against the population it served.</p>
+  <p style="font-size:0.92rem;color:var(--text);line-height:1.75;margin-bottom:1rem">That gap is what M11 measures. Clinical AI adoption in US healthcare has outpaced the governance infrastructure meant to hold it accountable — not because institutions are careless, but because "vendor says it's validated" is not the same governance standard as "we tested it on our own patients and can show our work." The six dimensions in this assessment name the specific infrastructure that closes that gap:</p>
+  <ul style="margin:0 0 1.25rem 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:0.6rem">
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>AI Tool Inventory &amp; Disclosure</strong> — the governance prerequisite. You cannot govern a tool your institution has not documented as being in use.</li>
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>Demographic Impact Assessment</strong> — institution-conducted testing against your own patient population, not vendor-reported validation, against pre-defined disparity thresholds.</li>
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>Human Override Protocols</strong> — documented authority to override an algorithmic output, plus review of override patterns as a signal that catches algorithmic error early.</li>
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>Transparency to Affected Parties</strong> — plain-language notice that an algorithm informed a clinical decision, and an explanation right when patients ask why.</li>
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>Error Correction &amp; Accountability</strong> — a named process for what happens after an error is found, including model updates, which require the same governance scrutiny as initial adoption.</li>
+    <li style="font-size:0.88rem;color:var(--text);line-height:1.6;padding:0.7rem 0.9rem;background:var(--white);border:1px solid var(--border);border-radius:8px"><strong>Post-Adoption Monitoring</strong> — ongoing review after go-live, including community or patient advisory input with actual authority, not consultation without consequence.</li>
+  </ul>
+  <p style="font-size:0.92rem;color:var(--text);line-height:1.75;margin-bottom:0.5rem"><strong>Who this is for:</strong> hospital systems running EHR-integrated predictive tools, medical practices using clinical decision support, health plans and payers running risk-stratification algorithms, and health technology companies building the tools those institutions deploy.</p>
+  <p style="font-size:0.92rem;color:var(--text);line-height:1.75">The concrete outcome of taking this assessment is not a grade — it's a map of which of these six governance layers your institution can currently document, and which ones currently depend on nobody asking the question. That map is what a regulator, a plaintiff's attorney, or your own board will eventually ask for. Better to have built it first.</p>
 </div>
 
 <!-- RELATED TOOLS -->
